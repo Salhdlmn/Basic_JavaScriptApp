@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 25px 30px;
+  }
+
+  #todo-form input{
+    border: 1px solid gainsboro;
+    padding: 5px;
+    width: 200px;
+    border-radius: 5px;
+  }
+
+  #todo-form button{
+    padding: 5px 15px;
+    border: none;
+    background-color: orangered;
+    color: white;
+    font-weight:bolder;
+    border-radius: 5px;
+  }
+
+  #todo-list{
+    display: flex;
+    max-width: 700px;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    
+    
+  }
+
+  #todo-list :not(.done){
+    border: 1px solid black;
+    padding: 5px 5px; 
+    cursor:pointer;
+
+  }
+  #todo-list .done{
+    border: 1px solid black;
+    padding: 8px 10px;
+    background-color: rgb(204, 198, 198); 
+    cursor: pointer;
+  }
